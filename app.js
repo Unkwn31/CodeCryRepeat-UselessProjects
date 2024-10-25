@@ -67,12 +67,12 @@ function calculateDistance() {
 function convertToFunUnits(km) {
     const units = {
         'School Buses': (km * 1000 / 12).toFixed(2), // Average bus is 12 meters
-        'Football Fields': (km * 1000 / 100).toFixed(2), // Football field is 100 meters
         'iPhone 16 Pro': (km * 1000 / 0.16002).toFixed(2), // iPhone 16 Pro is 0.16002 meters
         'Bikes': (km * 1000 / 1.7).toFixed(2), // Average bike length is 1.7 meters
         'Pencils': (km * 1000 / 0.19).toFixed(2), // Pencil is 0.19 meters
-        'Elephants': (km * 1000 / 3).toFixed(2), // Elephant is 3 meters
         'Shoe':(km * 1000 / 0.262).toFixed(2), // Shoe is 0.262 meters
+        'Football Fields': (km * 1000 / 100).toFixed(2), // Football field is 100 meters
+        'Beer Bottles': (km * 1000 / 0.5).toFixed(2), // Beer bottle is 0.5 meters
     };
     return units;
 }
