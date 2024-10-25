@@ -36,15 +36,6 @@ map.on('click', (e) => {
     }
 });
 
-calculateButton.addEventListener('click', () => {
-    // If both locations are set, calculate the distance
-    if (startLatLng && destLatLng) {
-        calculateDistance();
-    } else {
-        alert('Please click to set both start and destination points on the map.');
-    }
-});
-
 // Function to calculate and display distance
 function calculateDistance() {
     // Clear previous lines
@@ -57,12 +48,32 @@ function calculateDistance() {
     // Draw straight line path
     const path = L.polyline([startLatLng, destLatLng], { color: 'blue' }).addTo(map);
 
-    // Calculate and display distance
+    // Calculate the distance in meters
     const distanceInMeters = startLatLng.distanceTo(destLatLng); // Distance in meters
-    const distanceInFootballFields = distanceInMeters / 100; // Convert to football fields (100m)
-    const distanceInBeerBottles = distanceInMeters / 0.3; // Convert to beer bottles (0.3m)
+    const distanceInKm = distanceInMeters / 1000; // Convert to kilometers
 
-    distanceDisplay.innerText = `Distance: ${distanceInFootballFields.toFixed(2)} football fields (${distanceInBeerBottles.toFixed(2)} beer bottles)`;
+    // Convert the distance to funny units
+    const funUnits = convertToFunUnits(distanceInKm);
+
+    // Display the results
+    let output = `Distance: ${distanceInKm.toFixed(2)} km<br>`;
+    for (const [unit, value] of Object.entries(funUnits)) {
+        output += `${unit}: ${value}<br>`;
+    }
+    distanceDisplay.innerHTML = output;
+}
+
+// Function to convert kilometers to funny units
+function convertToFunUnits(km) {
+    const units = {
+        'School Buses': (km * 1000 / 12).toFixed(2), // Average bus is 12 meters
+        'Football Fields': (km * 1000 / 100).toFixed(2), // Football field is 100 meters
+        'iPhone 16 Pro': (km * 1000 / 0.16002).toFixed(2), // iPhone 16 Pro is 0.16002 meters
+        'Bikes': (km * 1000 / 1.7).toFixed(2), // Average bike length is 1.7 meters
+        'Beds': (km * 1000 / 2).toFixed(2), // Bed is 2 meters
+        'Elephants': (km * 1000 / 3).toFixed(2), // Elephant is 3 meters
+    };
+    return units;
 }
 
 // Reset the markers and distance when clicking the button
