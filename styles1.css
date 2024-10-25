@@ -1,0 +1,72 @@
+/* General page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Animated Heading */
+h1.moving-text {
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+    color: #3498db;
+    font-size: 2.5rem; /* Initial font size */
+    animation: zoomInOut 2s infinite ease-in-out; /* Zoom in and out infinitely */
+}
+
+/* Zoom animation */
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.3); /* Zoomed in size */
+    }
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+button#go-to-map {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#go-to-map:hover {
+    background-color: #2980b9;
+}
+/* Center button below image */
+button#go-to-map {
+    display: block;
+    margin: 20px auto; /* Center and add space between the image and button */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#go-to-map:hover {
+    background-color: #2980b9;
+}
