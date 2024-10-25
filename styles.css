@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #000; /* Changed to black */
     margin: 0;
     padding: 0;
+    color: #0a0a0a; /* Changed text color to white for better contrast */
 }
 
 h1 {
-    color: #333;
+    color: #d2c6c6; /* Changed to white */
     margin-top: 20px;
 }
 
@@ -22,7 +23,7 @@ h1 {
 label {
     margin-top: 10px;
     font-weight: bold;
-    color: #555;
+    color: #d7cca1; /* Changed to a bright color for visibility */
 }
 
 input, button {
@@ -30,11 +31,14 @@ input, button {
     margin: 10px 0;
     border-radius: 5px;
     width: 100%;
+    border: 1px solid #f6eaea; /* Added a border for visibility */
+    background-color: #333; /* Dark background for inputs */
+    color: #070707; /* White text color for inputs */
 }
 
 button {
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff; /* Changed to white */
     border: none;
     cursor: pointer;
 }
@@ -46,14 +50,14 @@ button:hover {
 #map {
     height: 500px;
     margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1700px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Light shadow for contrast */
 }
 
 #distance-display {
     margin-top: 10px;
     font-size: 1.2em;
-    color: #333;
+    color: #f3eded; /* Changed to white */
 }
