@@ -1,38 +1,31 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# Ezy Maps 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: CodeCryRepeat
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Aadhithyan Sudheesh Kumar - SCMS School Of Engineering And Technology
+- Member 2: Abhinand Abhilash - SCMS School Of Engineering And Technology
+- Member 3: Aleena Wilson - SCMS School Of Engineering And Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+The project is a simple map that gives you the distance between two locations of the users choice. The twist is that the units of measurement is not the conventional kilometers or meters but random items. The implementation can be seen below.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+The problem is the use of conventional units for measurements is getting old and we thought of finding new measurements.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+So we created a map to give the distance of two places in units other than kilometer.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Languages:- HTML, CSS, JavaScript
+- Libraries:- Leaflet
 
 ### Implementation
 For Software:
