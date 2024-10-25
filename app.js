@@ -70,8 +70,9 @@ function convertToFunUnits(km) {
         'Football Fields': (km * 1000 / 100).toFixed(2), // Football field is 100 meters
         'iPhone 16 Pro': (km * 1000 / 0.16002).toFixed(2), // iPhone 16 Pro is 0.16002 meters
         'Bikes': (km * 1000 / 1.7).toFixed(2), // Average bike length is 1.7 meters
-        'Beds': (km * 1000 / 2).toFixed(2), // Bed is 2 meters
+        'Pencils': (km * 1000 / 0.19).toFixed(2), // Pencil is 0.19 meters
         'Elephants': (km * 1000 / 3).toFixed(2), // Elephant is 3 meters
+        'Shoe':(km * 1000 / 0.262).toFixed(2), // Shoe is 0.262 meters
     };
     return units;
 }
