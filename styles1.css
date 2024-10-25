@@ -7,28 +7,51 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, rgb(0, 102, 204), rgb(34, 139, 34), rgb(144, 238, 144));
+
 }
+
 
 .container {
     text-align: center;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
-/* Animated Heading */
+/* Animated Static Heading Above Moving Text */
+h1.static-text {
+    font-family: sans-serif, 'arial';
+    color: #ddf50b;
+    font-size: 1.8rem; /* Slightly smaller font size */
+    animation: zoomInOutSmall 2s infinite ease-in-out; /* Separate animation for smaller scale */
+    margin: 0;
+}
+
+/* Adjusted Animated Heading */
 h1.moving-text {
-    font-family: 'Arial', sans-serif; /* Change to your desired font */
+    font-family: sans-serif, 'arial';
     color: #3498db;
-    font-size: 2.5rem; /* Initial font size */
-    animation: zoomInOut 2s infinite ease-in-out; /* Zoom in and out infinitely */
+    font-size: 2rem; /* Slightly larger font size */
+    animation: zoomInOut 2s infinite ease-in-out;
+    margin: 20px 0 0;
 }
 
-/* Zoom animation */
+/* Zoom animations */
 @keyframes zoomInOut {
     0%, 100% {
-        transform: scale(1); /* Normal size */
+        transform: scale(1);
     }
     50% {
-        transform: scale(1.3); /* Zoomed in size */
+        transform: scale(1.3); /* Larger scale for the main heading */
+    }
+}
+
+@keyframes zoomInOutSmall {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Smaller scale for the smaller heading */
     }
 }
 
@@ -39,24 +62,10 @@ h1.moving-text {
     margin: 20px 0;
 }
 
-button#go-to-map {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #3498db;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button#go-to-map:hover {
-    background-color: #2980b9;
-}
-/* Center button below image */
+/* Button Styling */
 button#go-to-map {
     display: block;
-    margin: 20px auto; /* Center and add space between the image and button */
+    margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
     color: white;
