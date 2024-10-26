@@ -29,60 +29,43 @@ For Software:
 
 ### Implementation
 For Software:
+HTML used for webpage creation.
+CSS for designing the GUI.
+Javascript for the leaflet library.
 # Installation
-[commands]
+HTML, CSS and JavaScript needs to be installed in the system. Please use the official download links for the same.Get the leaflet which is a javascrpt librabry. 
 
 # Run
-[commands]
+GO throught the documentation of the installed programs to get everything setup for the files to run. Download the files in the repository and store in a common file for execution.
 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+# Screenshots 
+![image](https://github.com/user-attachments/assets/89a2193f-8078-4fd8-9605-54c2f00036a3)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+This is the home page for the Ezy Maps webpage. From here throught the link at the bottom of the screen we can go to the map screen.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![image](https://github.com/user-attachments/assets/ab9253ec-7442-441c-b0ab-ee9438a53330)
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![image](https://github.com/user-attachments/assets/1f29a593-3919-4fc2-8589-b0fcd5fdd1b6)
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+The first image shows the map interface with a reset button below.The next image shows two location marked by the user and below the map is the different units used for measurement. 
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+https://github.com/user-attachments/assets/715a9249-1cd0-48fe-b28a-b0a3e052177d
+
+
+The video shows the entire working of the project from the start page to getting the distance in different units.
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aadhithyan Sudheesh Kumar: Frontend.
+- Abhinand Abhilash: Frontend,Backend.
+- Aleena Wilson: Frontend.
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
