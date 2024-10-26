@@ -63,7 +63,7 @@ The video shows the entire working of the project from the start page to getting
 
 
 ## Team Contributions
-- Aadhithyan Sudheesh Kumar: Frontend.
+- Aadhithyan Sudheesh Kumar: Backendend.
 - Abhinand Abhilash: Frontend,Backend.
 - Aleena Wilson: Frontend.
 
