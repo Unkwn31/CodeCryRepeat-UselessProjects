@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Text Example</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>MAP DISTANCE CALCULATOR</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href = "styles.css">
+    <style>
+        /* Basic styles */
+        body { font-family: "Lucida Console", "Courier New", monospace; 
+            font-weight: bold;
+                            }
+        #map { height: 600px; }
+        #distance-display { margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="static-text">welcome to the future of navigation</h1> <!-- New line of header -->
-        <h1><strong>...EZY MAPS...</strong></h1>
-        <h3 class="moving-text">- THE ONLY MAP APP YOU WILL EVER NEED -</h3>
-        <img src="97y52k.jpg" alt="Background Image" class="background-image">
-        <button id="go-to-map">Go to the most amazing MAP website</button>
-    </div>
-    <script>
-        document.getElementById('go-to-map').addEventListener('click', function() {
-            window.location.href = 'index.html'; // Change to your map page URL
-        });
-    </script>
+    <h1><center><b>...EZY MAPS...</b></center></h1>
+    <div id="map"></div>
+    <p id="distance-display"></p>
+    <button id="calculate-button">Reset</button>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
